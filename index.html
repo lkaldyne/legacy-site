@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laith Kamaleddine</title>
+    <meta name="description" content="Laith Kamaleddine">
+    <meta name="theme-color" content="#000028">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="media/icon.png">
+</head>
+
+<body onscroll="scrollArrowHandling();">
+    <div style="position: fixed; width: 1000px; height: 1000px; bottom:0;">
+        <div id="page" style="overflow:hidden;"></div>
+    </div>
+    <div id="contentWrapper">
+
+        <nav id="navbar">
+            <img id="TitleImage" src="media/profilepic.jpg" width="100" height="100">
+            <p id="TitleName">Laith Kamaleddine</p>
+        </nav>
+
+        <div id="terminalContainer">
+            <div id="terminalHeader">
+                <div class="windowButton"></div>
+                <div class="windowButton"></div>
+                <div class="windowButton"></div>
+            </div>
+			<div id="terminalBody" tabindex="0">
+                <div id="inputChunk">
+                    <p>user@laith.kamaleddine.com:~/home$</p>
+                </div>
+			</div>
+        </div>
+        <div id="contactButtonsContainer">
+            <div class="contactButtons"><p>Résumé</p><a href="https://lkaldyne.github.io/resume.pdf" target="_blank"><img id="resumeIcon" src="media/resumeIcon.png"></a></div>
+            <div class="contactButtons"><p>GitHub</p><a href="https://github.com/lkaldyne" target="_blank"><img id="githubIcon" src="media/githubIcon.png"></a></div>
+            <div class="contactButtons"><p>LinkedIn</p><a href="https://www.linkedin.com/in/laith-kamaleddine/" target="_blank"><img id="linkedinIcon" src="media/linkedinIcon.png"></a></div>
+            <div class="contactButtons"><p>E-Mail</p><a href="mailto:lkamaled@edu.uwaterloo.ca"><img id="emailIcon" src="media/emailIcon.png"></a></div>
+        </div>
+
+        <div class="technicalContainer" id="technicals">
+            <p id="techincalTitle"><span style="color: black;">--/</span> Let's Get Technical <span style="color: black;">/--</span></p>
+            <div id="mobileSkillContainer">
+                <div class="divider"></div>
+
+                <div class="mobileSkillCategory" onclick="mobileMenuExpandCollapse(this);">
+                    Languages<img id="expandArrow" src="media/expand-arrow.png">
+                    <div class="mobileSkillItem">
+                        Python,Ruby,C,C++,Java,JavaScript,TypeScript,HTML/CSS,SQL,VHDL,Verilog,VBA
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="mobileSkillCategory" onclick="mobileMenuExpandCollapse(this);">
+                    Web Libraries/Frameworks<img id="expandArrow" src="media/expand-arrow.png">
+                    <div class="mobileSkillItem">
+                        Rails,Django,Flask,Spring Boot,JSP/Servlets,Selenium,smtpLib,SikuliX
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="mobileSkillCategory" onclick="mobileMenuExpandCollapse(this);">
+                    Machine Learning, Natural Language Processing, and Automation<img id="expandArrow" src="media/expand-arrow.png">
+                    <div class="mobileSkillItem">
+                        SciKit-Learn,NLTK,PIL,GoCD,AWS-Lex,DialogFlow,Twilio-AutoPilot
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="mobileSkillCategory" onclick="mobileMenuExpandCollapse(this);">
+                    Frontend and Graphics<img id="expandArrow" src="media/expand-arrow.png">
+                    <div class="mobileSkillItem">
+                        Vue,React,Jinja,JSP/JSF,Pygame,Kivy,PyProcessing,MatplotLib
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="mobileSkillCategory" onclick="mobileMenuExpandCollapse(this);">
+                    Testing<img id="expandArrow" src="media/expand-arrow.png">
+                    <div class="mobileSkillItem">
+                        MiniTest,Junit,Mockito,GTest
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="mobileSkillCategory" onclick="mobileMenuExpandCollapse(this);">
+                    Devops and Deployment<img id="expandArrow" src="media/expand-arrow.png">
+                    <div class="mobileSkillItem">
+                        Docker,Jenkins,GitlabCI
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="mobileSkillCategory" onclick="mobileMenuExpandCollapse(this);">
+                    Hardware<img id="expandArrow" src="media/expand-arrow.png">
+                    <div class="mobileSkillItem">
+                        PC,Mac,Arduino,Raspberry Pi,PICAXE,Onion Omega
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="mobileSkillCategory" onclick="mobileMenuExpandCollapse(this);">
+                    Microsoft<img id="expandArrow" src="media/expand-arrow.png">
+                    <div class="mobileSkillItem">
+                        Word,Excel,Powerpoint,Sharepoint,Visio,OneNote,Outlook,Power BI
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+                <div style="visibility: hidden; height: 100px;"></div>
+            </div>
+        </div>
+        <div class="projectContainer" id="projects">
+            <p id="projectTitle"><span style="color: white;">--/</span> Some Projects & Achievements <span style="color: white;">/--</span></p>
+            <div class="timeline" id="timeline"></div>
+            <div style="visibility: hidden; height: 100px;"></div>
+        </div>
+        <img src="media/white_arrow.png" id="scrollArrow" onclick="clickArrowHandling();">
+    </div>
+
+    <script src="JS/scripts.js"></script>
+    <script src="JS/terminal.js"></script>
+
+</body>
+</html>
